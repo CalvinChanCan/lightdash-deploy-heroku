@@ -8,6 +8,6 @@ export LIGHTDASH_LOG_LEVEL=debug
 export PGCONNECTIONURI=$DATABASE_URL?sslmode=no-verify
 
 # migrate db
-yarn workspace backend migrate-production
+pnpm --filter backend migrate-production
 
 exec "$@"
